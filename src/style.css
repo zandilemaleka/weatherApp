@@ -5,6 +5,7 @@ body {
 }
 a {
     color: #007bff;  /* Link color */
+    text-decoration: none;
     text-decoration: none;  /* No underline on links */
 }
 .city-name {

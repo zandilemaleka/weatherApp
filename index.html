@@ -12,15 +12,15 @@
 <body>
     <div class="weather-app">
     <header>
-<form class="search-form">
-    <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+<form class="search-form" id="search-form">
+    <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input"/>
     <input type="submit" value="Search" class="search-form-type"/>
 </form>
     </header>
     <main>
     <div class="weather-card">
         <div>
-    <h1 class="city-name">
+    <h1 class="city-name" id="city-name">
         Paris
     </h1>
     <p class="weather-description">
@@ -43,5 +43,6 @@
         and <a href="https://forecast-meteo-app.netlify.app/" target="_blank"> hosted on netlify</a>
     </footer>
     </div>
+    <script src="src/java.js"></script>
 </body>
 </html>
