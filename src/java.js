@@ -5,6 +5,7 @@ let temperature = response.data.temperature.current;
 let cityElement = document.querySelector("#city-name");
 cityElement.innerHTML = response.data.city;
 temperatureElement.innerHTML = Math.round(temperature);
+
     
 let descriptionElement = document.querySelector("#weather-condition");
 descriptionElement.innerHTML = response.data.condition.description;
@@ -15,10 +16,12 @@ windElement.innerHTML = `${response.data.wind.speed}km/h`;
 let timeElement = document.querySelector("#week-day");
 let date = new Date(response.data.time * 1000);
 timeElement.innerHTML = formatDate(date);
+let iconElement = document.querySelector("#icon");
+iconElement.innerHTML= `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
+
 }
 
 function formatDate(date) {
-
 
 let minutes = date.getMinutes();
 let hours = date.getHours();

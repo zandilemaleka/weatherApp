@@ -60,16 +60,16 @@ header {
 .weather-value {
     font-size: 88px;  /* Font size for weather value */
     font-weight: 700;
-    margin-left: 10px;  /* Bold font weight */
+    line-height: 1; /* Bold font weight */
      /* Margin to the right of weather value */
 }
 .weather-icon {  /* Height of weather icon */
-    margin-top: 22px;
-    font-size: 44px;  /* Margin to the left of weather icon */
+    width: 88px;
+    height: 88px;  /* Margin to the left of weather icon */
 }
 .weather-symbol {
     font-size: 28px;  /* Font size for weather symbol */
-    margin-top: 16px;  /* Margin to the left of weather symbol */
+    margin-top: 6px;  /* Margin to the left of weather symbol */
 }
 main {
     padding: 30px 0;
