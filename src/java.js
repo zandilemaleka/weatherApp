@@ -18,7 +18,7 @@ let date = new Date(response.data.time * 1000);
 timeElement.innerHTML = formatDate(date);
 let iconElement = document.querySelector("#icon");
 iconElement.innerHTML= `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
-
+getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -46,8 +46,17 @@ function searchSubmit(event) {
   
   searchCity(searchInput.value);
 }
-function displayForecast(){
- 
+
+
+function getForecast(city){
+let apiKey = "05b1af1a7feb6t6o414b06b73f1569ed";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+axios.get(apiUrl).then(displayForecast);
+}
+
+
+
+function displayForecast(response){
 let forecastElement = document.querySelector("#forecast");
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]; 
 let forecastHtml = "";
@@ -67,6 +76,4 @@ forecastElement.innerHTML = forecastHtml;
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
 
-searchCity("Polokwane");
-
-displayForecast();
+searchCity("Polokwane");;
