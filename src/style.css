@@ -87,8 +87,9 @@ main {
     margin-top: 30px;  /* Border below weather forecast */
 }
 .weather-forecast-icon {
-    font-size: 40px;  /* Font size for weather forecast emoji */
-    margin: 0 10px; 
+    width: 88px; 
+    height: 88px; /* Font size for weather forecast emoji */
+    margin: 0 auto; 
     
     text-align: center; /* Margin to the left and right of weather forecast emoji */
 }
