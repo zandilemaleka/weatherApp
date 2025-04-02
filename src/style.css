@@ -74,7 +74,36 @@ header {
 main {
     padding: 30px 0;
 }
-footer {
+.weather-forecast-date {
+    text-align: center;
+    font-size: 16px;  /* Font size for weather forecast date */
+    color: rgba(39, 33, 66, 0.5); /* Margin below weather forecast date */
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.weather-forecast {
+    display: flex;  /* Flexbox layout for weather forecast */
+    justify-content: space-around;
+    margin-top: 30px;  /* Border below weather forecast */
+}
+.weather-forecast-icon {
+    font-size: 40px;  /* Font size for weather forecast emoji */
+    margin: 0 10px; 
+    
+    text-align: center; /* Margin to the left and right of weather forecast emoji */
+}
+.weather-forecast-temp{
+    text-align: center; /* Font size for weather forecast temperature */
+    color: #f65282;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;   /* Flexbox layout for weather forecast temperature */
+    justify-content: center;
+    }
+    .weather-forecast-min-max {
+    padding: 0 10px;/* Font size for weather forecast min-max temperature */
+}
+    footer {
     border-top: 1px solid #ccc;
     padding: 30px 0 0 0;
     text-align: center;
